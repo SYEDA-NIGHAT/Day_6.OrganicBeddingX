@@ -4,13 +4,13 @@ import { Rule } from "sanity";
 export const product = {
   name: "product",
   title: "Product",
-  type: "document",
+  type: "documnet",
   fields: [
     {
       name: "title",
       title: "Title",
       type: "string",
-      validation: (Rule: Rule) => Rule.required(), // Ensures the title is required
+      validation: (Rule: Rule) => Rule.required(), 
     },
     {
       name: "description",
@@ -21,7 +21,7 @@ export const product = {
       name: "price",
       title: "Price",
       type: "number",
-      validation: (Rule: Rule) => Rule.required().min(0), // Ensures price is required and non-negative
+      validation: (Rule: Rule) => Rule.required().min(0), 
     },
     {
       name: "image",
